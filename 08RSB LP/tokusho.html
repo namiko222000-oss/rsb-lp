@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>特定商取引法に基づく表記 | RSB</title>
+    <meta name="description" content="RSBの特定商取引法に基づく表記です。">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Noto+Serif+JP:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="noise-overlay"></div>
+
+    <header class="py-10 text-center fade-in">
+        <a href="index.html" class="back-link">&lt; トップページへ戻る</a>
+        <h1 class="brand-subtitle mt-6">Rational Strategic Bridging</h1>
+        <h2 class="section-title">特定商取引法に基づく表記</h2>
+    </header>
+
+    <main>
+        <section class="service-detail-section py-10 fade-in-scroll">
+            <div class="container narrow">
+                <div class="message-box" style="margin-bottom: 3rem;">
+                    
+                    <div class="detail-block">
+                        <h4 class="detail-label">販売事業者名・所在地・連絡先など</h4>
+                        <p class="text-gray text-sm mt-2">※販売事業者名（屋号）、代表責任者名、所在地、電話番号、メールアドレスなどの基本情報は、決済ページまたはお問い合わせ先にてご確認ください。</p>
+                    </div>
+
+                    <div class="detail-block mt-8">
+                        <h4 class="detail-label">商品代金以外の必要料金</h4>
+                        <p class="mt-2">消費税、インターネット接続料金、通信料金、振込手数料等はお客様のご負担となります。</p>
+                    </div>
+
+                    <div class="detail-block mt-8">
+                        <h4 class="detail-label">引渡し時期</h4>
+                        <p class="mt-2">決済完了確認後、即時（オンラインコンテンツ・AIパスワード等）、または指定の日時（コンサルティング等）にご提供いたします。</p>
+                    </div>
+
+                    <div class="detail-block mt-8">
+                        <h4 class="detail-label text-gold">【不良品・不備について】</h4>
+                        <ul class="step-list feature-list mt-4">
+                            <li><span class="step-title">1.デジタルコンテンツ：</span>データの破損等で閲覧不能な場合は速やかに再送付します。</li>
+                            <li><span class="step-title">2.オンラインサービス：</span>当方の不備（急病、通信障害等）によりサービス提供が困難な場合は、日程振替または全額返金にて対応します。</li>
+                            <li><span class="step-title">3.免責：</span>顧客側の環境起因による不具合や、提供情報の「効果（成婚保証等）」への不満を理由とした返品・返金には、役務の性質上一切応じられません。</li>
+                        </ul>
+                    </div>
+
+                    <div class="detail-block goal-block mt-8">
+                        <h4 class="detail-label text-gold">【返品・キャンセル規定】</h4>
+                        <ul class="step-list feature-list mt-4">
+                            <li><span class="step-title">1.デジタルコンテンツ及びサービスの性質上：</span>決済後の返品・返金・キャンセルには一切応じられません。</li>
+                            <li><span class="step-title">2.個別コンサル等について：</span>実施3日前までの連絡に限り日程変更を無料で承ります。それ以降の変更や当日欠席は返金不可です。当方都合で提供不能となった場合は全額返金又は日程振替を行います。</li>
+                            <li><span class="step-title">3.物品の配送について：</span>物品の配送を伴わないサービスのため、配送料及び返品送料は発生いたしません。</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="legal-section">
+        <div class="container narrow text-center">
+            <div class="footer-links mb-8">
+                <a href="tokusho.html">特定商取引法に基づく表記</a>
+                <span class="separator">|</span>
+                <a href="#">プライバシーポリシー</a>
+            </div>
+            <p class="copyright text-sm text-gray">© 2026 RSB Advisory. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const elements = document.querySelectorAll('.fade-in-scroll');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+            elements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+</body>
+
+</html>
